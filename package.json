@@ -1,0 +1,25 @@
+{
+  "name": "corgi-sandbox",
+  "version": "0.0.0",
+  "description": "A 3D sandbox game with physics and other stuff. made by elburg.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/polygonnedpotato/corgi-sandbox.git"
+  },
+  "keywords": [
+    "game"
+  ],
+  "author": "elburg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/polygonnedpotato/corgi-sandbox/issues"
+  },
+  "homepage": "https://github.com/polygonnedpotato/corgi-sandbox#readme",
+  "dependencies": {
+    "electron": "^15.0.0"
+  }
+}
