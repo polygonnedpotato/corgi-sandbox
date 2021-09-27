@@ -3,15 +3,26 @@
   "version": "0.0.0",
   "description": "A 3D sandbox game with physics and other stuff. made by elburg.",
   "main": "index.js",
+  "os": [
+    "linux"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepack":"echo \"preparing for packing.\" && rm -rfv ./node_modules ./package-lock.json && echo \"done\"",
+    "test": "echo \"Tests:\n\t'testLinuxAll'\t--\tRun Teast Mode (Linux All)\" && exit 0",
+    "testLinuxAll": "node --experimental-vm-modules --inspect=localhost:9229 -- index.js --teastMode=true --execFor=LinuxAll",
+    "execLinuxAll": "node index.js --execFor=LinuxAll"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/polygonnedpotato/corgi-sandbox.git"
   },
   "keywords": [
-    "game"
+    "electron",
+    "game",
+    "sandbox",
+    "desktop",
+    "3d",
+    "sandbox-game"
   ],
   "author": "elburg",
   "license": "MIT",
