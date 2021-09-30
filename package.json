@@ -9,8 +9,8 @@
   "scripts": {
     "prepack": "echo \"preparing for packing.\" && rm -rfv ./node_modules ./package-lock.json ~/.npm/_logs/* && echo \"done\"",
     "test": "echo \"Tests:\n\t'testLinuxAll'\t--\tRun Teast Mode (Linux All)\" && exit 0",
-    "testLinuxAll": "node --experimental-vm-modules --inspect=localhost:9229 -- index.js --teastMode=true --execFor=LinuxAll",
-    "execLinuxAll": "node index.js --execFor=LinuxAll"
+    "testLinuxAll": "node --experimental-vm-modules --inspect=localhost:9229 -- electron . --teastMode=true --execFor=LinuxAll",
+    "execLinuxAll": "node electron . --execFor=LinuxAll"
   },
   "repository": {
     "type": "git",
